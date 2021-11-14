@@ -1,3 +1,5 @@
+// Function working as include
+
 function includeHTML() {
 	var z, i, elmnt, file, xhttp;
 	/*loop through a collection of all HTML elements:*/
@@ -27,6 +29,8 @@ function includeHTML() {
   };
 
 includeHTML();
+
+// Function working as include
 
 function openNav() {
   document.getElementById("myNav").style.width = "320px";
