@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Masonry Layout with Display - Column</title>
+	<link rel="stylesheet" href="style.css">
+	<style>
+		h1 {
+			text-align: center;
+			margin-bottom: 1.4em;
+		}
+		.wrapper {
+			padding: 46.5px;
+		}
+		.d-column {
+			max-width: 1100px;
+			margin: 1em auto;
+			columns: 3; /* Required */
+			column-gap: 1em; /* Optional */
+		}
+		.d-column > div {
+			break-inside: avoid; /* Required */
+			background: #eee;
+			padding: 2em;
+			border-radius: 3px;
+			margin-bottom: 1em; /* Required */
+		}
+		.span-column {
+			column-span: all;
+			text-align: center;
+			padding: 3em!important;
+		}
+		button {
+			padding: 6px 16px;
+			margin-top: .9em;
+			cursor: pointer;
+		}
+		@media(max-width:1025px) {
+			.d-column {
+				columns: 2;
+			}
+		}
+		@media(max-width:575px) {
+			.d-column {
+				columns: 1;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div w3-include-html="header.html"></div>
+	<div class="wrapper">
+		<h1>Masonry Layout with Display - Column</h1>
+		<div class="d-column">
+			<div class="span-column">
+				<h2>Can you believe that I started the journey?</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, magni. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque culpa sunt laudantium! Eveniet impedit consectetur corporis a dolorem adipisci minima aperiam praesentium voluptas.</p>
+				<p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Cras ultricies ligula sed magna dictum porta. Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Cras ultricies ligula sed magna dictum porta.</p>
+				<button>Read More</button>
+			</div>
+			<div>
+				<h2>Wow! heading, you are awesome</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, magni.</p>
+				<button>Read More</button>
+			</div>
+			<div>
+				<h2>Head over to the south to see the heading</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, magni.</p>
+				<button>Read More</button>
+			</div>
+			<div>
+				<h2>Heading went to school</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, magni. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam reprehenderit, laboriosam accusantium eius dicta pariatur nulla dolor et minima itaque iste numquam deserunt eos omnis laudantium optio. Magnam, voluptate id.</p>
+				<button>Read More</button>
+			</div>
+			<div>
+				<h2>What makes you thing this is a heading?</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, magni. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem, harum.</p>
+				<button>Read More</button>
+			</div>
+			<div>
+				<h2>Learn How to create an amazing heading</h2>
+				<p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, molestiae veritatis. Aliquam, provident! Autem perspiciatis enim, aut doloribus officiis, repellat dolores tenetur, nobis eum laborum fugiat cum explicabo. Tempore, nihil?	 adipisicing elit. Eius, magni.</p>
+				<button>Read More</button>
+			</div>
+			<div>
+				<h2>The heading is borrowed from somebody</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, magni.</p>
+				<button>Read More</button>
+			</div>
+			<div>
+				<h2>He wrote this heading</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, magni.</p>
+				<button>Read More</button>
+			</div>
+			<div>
+				<h2>Know what went wrong with this</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, magni. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus voluptatem distinctio odio magni fugit dolorum minus nisi accusantium delectus? Adipisci molestiae animi expedita vero quidem aliquid quo molestias cumque tempora!</p>
+				<button>Read More</button>
+			</div>
+			<div>
+				<h2>Another heading that rocks under the hood</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, magni.</p>
+				<button>Read More</button>
+			</div>
+			<div>
+				<h2>What an amazing heading to be made</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, magni. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam tenetur molestiae ipsa id reiciendis soluta! Molestias labore nemo velit possimus! Delectus adipisci nesciunt velit labore, debitis dignissimos?</p>
+				<button>Read More</button>
+			</div>
+			<div>
+				<h2>How did you create such a heading?</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, magni. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, maxime quibusdam modi consectetur officiis quod harum sed ratione aliquam delectus repudiandae excepturi esse, consequuntur nisi maiores perferendis eos</p>
+				<p> minus perspiciatis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus minus blanditiis nisi, facere veritatis soluta! Omnis unde eum, nisi dolore commodi necessitatibus dicta natus harum ducimus earum libero sequi fugit!</p>
+				<button>Read More</button>
+			</div>
+			<div>
+				<h2>Man this heading rocks!</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, magni. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit eos officiis deserunt natus eum, minima rem in recusandae fugit vero qui sit culpa dicta magni repellat, dolorem impedit maiores optio.</p>
+				<button>Read More</button>
+			</div>
+			<div>
+				<h2>Come on look at this heading</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, magni. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus voluptatem distinctio odioi expedita</p>
+				<p>Dolor ut tempora, omnis ad non repellat quas labore totam quisquam, saepe amet quidem dolorem numquam perspiciatis maiores corporis. Recusandae, eius? Earum?</p>
+				<button>Read More</button>
+			</div>
+			<div>
+				<h2>Can you create a heading like this?</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, magni.</p>
+				<button>Read More</button>
+			</div>
+			<div>
+				<h2>A heading that tells a story</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, magni.</p>
+				<button>Read More</button>
+			</div>
+			<div>
+				<h2>Come on look at this heading</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, magni. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus voluptatem distinctio odioi expedita</p>
+				<p>Dolor ut tempora, omnis ad non repellat quas labore totam quisquam, saepe amet quidem dolorem numquam perspiciatis maiores corporis. Recusandae, eius? Earum?</p>
+				<button>Read More</button>
+			</div>
+			<div>
+				<h2>Come on look at this heading</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, magni. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus voluptatem distinctio odioi expedita</p>
+				<p>Dolor ut tempora, omnis ad non repellat quas labore totam quisquam, saepe amet quidem dolorem numquam perspiciatis maiores corporis. Recusandae, eius? Earum?</p>
+				<button>Read More</button>
+			</div>
+			<div>
+				<h2>This heading must be under the hood</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, magni.</p>
+				<button>Read More</button>
+			</div>
+			<div>
+				<h2>How can I make such a heading!</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, magni. Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae dolores facere architecto eligendi.</p>
+				<p>Optio aliquid exercitationem, et temporibus natus labore commodi. Sit cum ducimus cumque totam, quisquam cupiditate eaque enim.</p>
+				<button>Read More</button>
+			</div>
+			<div>
+				<h2>I am the end of the heading</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, magni. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus voluptatem distinctio odio magni fugit dolorum minmolestiae animi</p>
+				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor ut tempora, omnis ad non repellat quas labore totam quisquam, saepe amet quidem dolorem numquam perspiciatis maiores corporis. Recusandae, eius? Earum?</p>
+				<button>Read More</button>
+			</div>
+		</div>
+	</div>
+<script src="app.js"></script>
+</body>
+</html>
